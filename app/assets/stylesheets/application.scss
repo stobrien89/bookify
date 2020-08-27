@@ -1,0 +1,485 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+  *= require bootstrap
+
+  *= require_tree 
+
+  *= require_self
+ 
+ */
+
+// color scheme:
+//pale gold: #D79922
+// pale red #9D3744
+// dark grey: #757687
+// light grey: #A9AABC
+// deep blue: #106DC0
+// salmon: #D86B74
+// off-white : #F0F1EB
+//light blue: #C5CBE3
+//bright red: #F13C20
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:wght@300&display=swap");
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: font-url("glyphicons-halflings-regular.eot");
+  src: font-url("glyphicons-halflings-regular.eot?iefix") format("eot"),
+    font-url("glyphicons-halflings-regular.woff") format("woff"),
+    font-url("glyphicons-halflings-regular.ttf") format("truetype"),
+    font-url("glyphicons-halflings-regular.svg#glyphicons_halflingsregular")
+      format("svg");
+}
+@font-face {
+  font-family: "Circular";
+  src: font-url("circular_std.ttf");
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.primary {
+  color: #106dc0;
+}
+
+.btn {
+  background-color: #d86b74;
+  color: #f0f1eb;
+}
+
+.fa-star {
+  color: #d86b74;
+}
+
+h1,
+h2,
+h3,
+h4,
+.dark-gray {
+  color: #4e5a65;
+}
+
+.primary {
+  color: #106dc0;
+}
+
+.img-thumbnail {
+  border: none;
+}
+
+body {
+  color: #757687;
+  padding: 45px 0 0 0;
+  margin-bottom: 350px;
+  background-color: #f0f1eb;
+  font-family: Circular, "Nunito Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.toast {
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.fa-check {
+  color: #a9aabc;
+}
+
+.container {
+  width: 80% !important;
+}
+
+//Nav styles
+.text-white {
+  color: #f0f1eb !important;
+}
+
+.sidebar-list {
+  list-style: none;
+}
+
+.sidebar-item {
+  font-size: 1.25em;
+  padding-bottom: 10px;
+}
+
+.navbar-default,
+navbar-nav {
+  background-color: #106dc0;
+  border: 1px solid;
+}
+.dropdown-toggle {
+  background-color: #106dc0 !important;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-brand {
+  color: #f0f1eb !important;
+}
+
+.navbar-form {
+  width: auto;
+}
+
+.dropdown-menu,
+.dropdown-menu > li > a {
+  background-color: #f0f1eb;
+  border-radius: 20px !important;
+}
+
+//Form Styles
+.form-rounded {
+  width: 12vw !important;
+  font-size: 1.25rem;
+  text-align: left;
+  border: 1px solid #dddddd !important;
+  border-top-color: rgb(221, 221, 221) !important;
+  border-top-style: solid !important;
+  border-top-width: 1px !important;
+  border-right-color: rgb(221, 221, 221) !important;
+  border-right-style: solid !important;
+  border-right-width: 1px !important;
+  border-bottom-color: rgb(221, 221, 221) !important;
+  border-bottom-style: solid !important;
+  border-bottom-width: 1px !important;
+  border-left-color: rgb(221, 221, 221) !important;
+  border-left-style: solid !important;
+  border-left-width: 1px !important;
+  border-image-source: initial !important;
+  border-image-slice: initial !important;
+  border-image-width: initial !important;
+  border-image-outset: initial !important;
+  border-image-repeat: initial !important;
+  border-radius: 24px !important;
+  border-top-left-radius: 24px !important;
+  border-top-right-radius: 24px !important;
+  border-bottom-right-radius: 24px !important;
+  border-bottom-left-radius: 24px !important;
+}
+
+.search-btn {
+  background-color: #d86b74;
+  color: #f0f1eb;
+}
+
+//glyphs inside of search fields
+.nav-search {
+  color: black;
+}
+
+.inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .nav-search {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align glyph */
+.right-addon .nav-search {
+  right: 0px;
+}
+
+/* add padding  */
+.right-addon input {
+  padding-right: 30px;
+}
+
+//User Profile styles
+
+//Avatar sizes
+.avatar-small {
+  width: 28px;
+}
+.avatar-medium {
+  width: 48px;
+}
+.avatar-large {
+  width: 68px;
+}
+.avatar-full {
+  width: 100%;
+}
+
+.verification {
+  padding: 0px 0px 0px 15px;
+}
+
+//Room Show page
+.amenities-container {
+  margin-top: 30px;
+}
+
+.amenities li {
+  list-style: none;
+  margin-bottom: 10px;
+  // font-size: 16px;
+}
+
+//reservation table
+.reservation-table td {
+  width: 100%;
+  border: none;
+  border-bottom: 1px;
+  padding: 10px;
+}
+
+.reservation-table .total td {
+  // font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+
+form-control.datepicker {
+  border: 1px;
+  text-align: center;
+}
+
+// Search
+
+#main {
+  height: 100%;
+  overflow: scroll;
+}
+
+#left {
+  height: 100%;
+  padding: 10px 400px 10px 20px;
+  overflow: scroll;
+}
+
+#right {
+  position: fixed;
+  height: 100%;
+  width: 450px;
+  top: 0;
+  right: 0;
+}
+
+//Home Page
+.jumbotron {
+  color: #106dc0;
+  padding-top: 150px;
+}
+
+.text-muted {
+  color: #d86b74;
+}
+
+.jumbotron-bg {
+  background-image: asset-url("santorini.jpg");
+
+  /* Full height */
+  height: 70vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.discovery-card {
+  // background-image: url("hk.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+//New Listing pages
+
+.new-listing-header {
+  font-weight: 100 !important;
+}
+
+// panel header secondary color
+.secondary-header {
+  background-color: #d86b74 !important;
+}
+
+.secondary-header > h4 {
+  color: #f0f1eb !important;
+}
+
+// Footer
+
+.footer-bs {
+  height: 350px;
+  position: absolute;
+  bottom: 0;
+  background-color: #106dc0;
+  padding: 60px 40px;
+  color: #f0f1eb;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 6px;
+}
+.footer-bs .footer-brand,
+.footer-bs .footer-nav,
+.footer-bs .footer-social,
+.footer-bs .footer-ns {
+  padding: 10px 25px;
+}
+.footer-bs .footer-nav,
+.footer-bs .footer-social,
+.footer-bs .footer-ns {
+  border-color: transparent;
+}
+.footer-bs .footer-brand h2 {
+  margin: 0px 0px 10px;
+}
+.footer-bs .footer-brand p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-bs .footer-nav ul.pages {
+  list-style: none;
+  padding: 0px;
+}
+.footer-bs .footer-nav ul.pages li {
+  padding: 5px 0px;
+}
+.footer-bs .footer-nav ul.pages a {
+  color: #f0f1eb;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.footer-bs .footer-nav ul.pages a:hover {
+  color: #f0f1eb;
+  text-decoration: none;
+}
+.footer-bs .footer-nav h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.footer-bs .footer-nav ul.list {
+  list-style: none;
+  padding: 0px;
+}
+.footer-bs .footer-nav ul.list li {
+  padding: 5px 0px;
+}
+.footer-bs .footer-nav ul.list a {
+  color: #f0f1eb;
+}
+.footer-bs .footer-nav ul.list a:hover {
+  color: #f0f1eb;
+  text-decoration: none;
+}
+
+.footer-bs .footer-social ul {
+  list-style: none;
+  padding: 0px;
+}
+.footer-bs .footer-social h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.footer-bs .footer-social li {
+  padding: 5px 4px;
+}
+.footer-bs .footer-social a {
+  color: #f0f1eb;
+}
+.footer-bs .footer-social a:hover {
+  color: #f0f1eb;
+  text-decoration: none;
+}
+
+.footer-bs .footer-ns h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.footer-bs .footer-ns p {
+  font-size: 12px;
+  color: #f0f1eb;
+}
+
+//media queries
+@media (min-width: 768px) {
+  .footer-bs .footer-nav,
+  .footer-bs .footer-social,
+  .footer-bs .footer-ns {
+    border-left: solid 1px #106dc0;
+  }
+}
+
+// @media (max-width: 768px) {
+//   body {
+//     font-size: 10px !important;
+//   }
+//   .footer-bs {
+//     position: static;
+//     height: auto;
+//     margin-top: 75px;
+//     bottom: 0;
+//     left: 0;
+//   }
+// }
+
+@media (max-width: 769px) {
+  body {
+    margin-bottom: 930px;
+    font-size: 14px !important;
+  }
+
+  //Home Page
+  .jumbotron {
+    padding-top: 15px;
+  }
+
+  .jumbotron-bg {
+    height: 70vh;
+  }
+
+  //Forms
+  input {
+    margin-bottom: 5px;
+  }
+  .facebook {
+    margin-bottom: 50px;
+  }
+
+  //Room show page
+  .reservation-form {
+    margin-top: 25px;
+  }
+
+  .room-main-image {
+    margin-top: 30px;
+  }
+
+  .amenities li {
+    margin-bottom: 20px;
+  }
+
+  //footer
+  .footer-bs {
+    height: 930px;
+  }
+  .new-listing-img {
+    display: none;
+  }
+}

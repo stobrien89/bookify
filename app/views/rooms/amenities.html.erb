@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3">
+            <%= render 'room_menu' %>
+        </div>
+        <div class="col-md-9" style="margin-top: 50px;">
+            <div class="panel panel-default">
+                <div class="panel-heading secondary-header text-center">
+                    <h4>Amenities</h4>
+                </div>
+                <div class="panel-body">
+                    <div class="container">
+                        <%= form_for @room do |f| %>
+                            <div class="row form-group">
+                                <div class="col-md-4">
+                                    <%= f.check_box :tv %> TV
+                                </div>
+                                <div class="col-md-4">
+                                    <%= f.check_box :internet %> Internet
+                                </div>
+                                <div class="col-md-4">
+                                    <%= f.check_box :kitchen %> Kitchen
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-md-4">
+                                    <%= f.check_box :air_conditioning %> Air Conditioning
+                                </div>
+                                <div class="col-md-4">
+                                    <%= f.check_box :heating %> Heating
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <%= f.submit "Save", class: "btn btn-form" %>
+                            </div>
+                            
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

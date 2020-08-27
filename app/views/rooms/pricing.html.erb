@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3">
+            <%= render 'room_menu' %>
+        </div>
+        <div class="col-md-9" style="margin-top: 50px;">
+            <div class="panel panel-default">
+                <div class="panel-heading secondary-header text-center">
+                    <h4>Pricing</h4>
+                </div>
+                <div class="panel-body">
+                    <div class="container">
+                        <%= form_for @room do |f| %>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label>Price</label>
+                                    <%= f.text_field :price, placeholder: "eg: $25", class: "form-control", required: true %>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <%= f.submit "Save", class: "btn btn-form" %>
+                            </div>
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
